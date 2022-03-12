@@ -42,7 +42,7 @@ class DashboardScreen extends StatelessWidget {
             onTap: () {
               // un codigo
               Navigator.pop(context);
-              Navigator.pushNamed(context, '/movies');
+              Navigator.pushNamed(context, '/intents');
             },
           )
         ],

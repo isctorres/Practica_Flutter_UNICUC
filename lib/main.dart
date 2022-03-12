@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:practica2/screens/intents_screen.dart';
 import 'package:practica2/screens/movies_screen.dart';
 import 'package:practica2/screens/splash_screen.dart';
 
@@ -12,7 +13,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      routes: {'/movies': (BuildContext) => MoviesScreen()},
+      routes: {
+        '/movies': (BuildContext) => MoviesScreen(),
+        '/intents': (BuildContext) => IntentsScreen(),
+      },
       home: SplashScreen(),
     );
   }
