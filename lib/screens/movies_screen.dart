@@ -48,6 +48,7 @@ class _MoviesScreenState extends State<MoviesScreen> {
 
   Widget _listPopularMovies(List<PopularMovieModel> movies) {
     return ListView.builder(
+      padding: EdgeInsets.all(8.0),
       itemBuilder: (context, index) {
         PopularMovieModel movie = movies[index];
         return CardPopularView(
